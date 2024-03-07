@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: ms2
+  config:
+    import: optional:configserver:http://localhost:8888
+application:
+  config:
+    students-url: http://localhost:8222/api/v1/teachers
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
